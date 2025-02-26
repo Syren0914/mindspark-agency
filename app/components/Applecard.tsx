@@ -37,7 +37,7 @@ const DummyContent = () => {
               thought.
             </p>
             <Image
-              src="/public/example.webp"
+              src="/example.webp"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
@@ -52,40 +52,41 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "/example.webp",
+    category: "Lumthai",
+    title: "Taste Authentic Thai taste.",
+    src: "/lumthaifront.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "/example.webp",
+    category: "Thai Papaya",
+    title: "Try Authentic Thai Food.",
+    src: "/thaipapaya.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "/example.webp",
-    content: <DummyContent />,
-  },
-
-  {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "/example.webp",
+    category: "Coffeeholic",
+    title: "Coffee for the real enthuasists ",
+    src: "/holic.png",
     content: <DummyContent />,
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "/example.webp",
+    category: "Asian Noodle House",
+    title: "Best Noodle Shop in Town",
+    src: "/asian.jpg",
     content: <DummyContent />,
   },
+  
+  {
+    category: "JTM Gems",
+    title: "Gems Botique",
+    src: "/jtm.png",
+    content: <DummyContent />,
+  },
+  
   {
     category: "Hiring",
     title: "Hiring for a Staff Software Engineer",
-    src: "/example.webp",
+    src: "/Ek.jpg",
     content: <DummyContent />,
   },
 ];
