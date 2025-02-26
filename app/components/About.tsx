@@ -10,7 +10,7 @@ export default function About() {
           </p>
           <p className="text-xl">
             Our platform combines cutting-edge technology with an intuitive interface, allowing you to build
-            sophisticated bots that would typically require extensive programming knowledge. With MindSpark, you're limited
+            sophisticated bots that would typically require extensive programming knowledge. With MindSpark, you&apos;re limited
             only by your imagination.
           </p>
         </div>

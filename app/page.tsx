@@ -155,7 +155,7 @@ export default function Home() {
       Simple, transparent pricing
     </h2>
     <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-      Choose the plan that's right for you we build
+      Choose the plan that&apos;s right for you we build
       from startups to enterprises, we design scalable solutions that automate, engage, and elevate your brand. Let’s turn your vision into reality.
     </p>
   </motion.div>

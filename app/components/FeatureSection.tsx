@@ -37,7 +37,13 @@ export default function FeatureSection() {
   )
 }
 
-function FeatureCard({ icon: Icon, title, description }) {
+interface FeatureCardProps {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+}
+
+function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
   return (
     <motion.div
       whileHover={{ scale: 1.05, rotateY: 5 }}

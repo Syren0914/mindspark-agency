@@ -159,7 +159,7 @@ export default function About() {
         >
           <Card>
             <CardHeader>
-              <CardTitle className="text-2xl font-bold">Let's Work Together</CardTitle>
+              <CardTitle className="text-2xl font-bold">Let&apos;s Work Together</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="mb-4">
