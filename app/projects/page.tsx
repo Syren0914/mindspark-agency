@@ -13,30 +13,57 @@ import { Footer } from "../components/Footer"
 
 // Sample project data - replace with your actual projects
 const projects = [
+  // {
+  //   title: "E-commerce Platform",
+  //   description: "A full-stack e-commerce solution with real-time inventory management.",
+  //   image: "/placeholder.svg",
+  //   technologies: ["React", "Node.js", "MongoDB"],
+  //   githubUrl: "https://github.com/yourusername/ecommerce-platform",
+  //   liveUrl: "https://ecommerce-platform-demo.vercel.app",
+  // },
   {
-    title: "E-commerce Platform",
+    title: "Glow Organic Skincare",
     description: "A full-stack e-commerce solution with real-time inventory management.",
-    image: "/placeholder.svg",
+    image: "/glowOrganic.png",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
     liveUrl: "https://ecommerce-platform-demo.vercel.app",
   },
   {
-    title: "Weather App",
+    title: "Thai Papaya",
+    description: "A full-stack e-commerce solution with real-time inventory management.",
+    image: "/thaipapaya.png",
+    technologies: ["React", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/yourusername/ecommerce-platform",
+    liveUrl: "https://ecommerce-platform-demo.vercel.app",
+  },
+  {
+    title: "Lumthai",
+    description: "A full-stack e-commerce solution with real-time inventory management.",
+    image: "/lumthai.png",
+    technologies: ["React", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/yourusername/ecommerce-platform",
+    liveUrl: "https://ecommerce-platform-demo.vercel.app",
+  },
+  
+  {
+    title: "Thai Love ",
+    description: "A full-stack e-commerce solution with real-time inventory management.",
+    image: "/thailove.webp",
+    technologies: ["React", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/yourusername/ecommerce-platform",
+    liveUrl: "https://ecommerce-platform-demo.vercel.app",
+  },
+  
+  {
+    title: "Three.js Apple Webpage",
     description: "A sleek weather application with location-based forecasts.",
-    image: "/placeholder.svg",
+    image: "/threejs.png",
     technologies: ["Vue.js", "OpenWeatherMap API"],
     githubUrl: "https://github.com/yourusername/weather-app",
     liveUrl: "https://weather-app-demo.vercel.app",
   },
-  {
-    title: "Task Manager",
-    description: "A collaborative task management tool for teams.",
-    image: "/placeholder.svg",
-    technologies: ["Angular", "Firebase", "RxJS"],
-    githubUrl: "https://github.com/yourusername/task-manager",
-    liveUrl: "https://task-manager-demo.vercel.app",
-  },
+  
   // Add more projects as needed
 ]
 
@@ -57,10 +84,10 @@ export default function Projects() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Welcome to My Project Showcase
+                  Welcome to our Project Showcase
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Explore my portfolio of web development projects. From responsive designs to full-stack applications,
+                  Explore our portfolio of web development projects. From responsive designs to full-stack applications,
                   discover my passion for creating innovative digital solutions.
                 </p>
               </div>
@@ -69,7 +96,7 @@ export default function Projects() {
                   <a href="#projects">View Projects</a>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="#contact">Contact Me</a>
+                  <a href="mailto:erdenebatbayar3@gmail.com">Contact Us</a>
                 </Button>
               </div>
             </div>
@@ -77,7 +104,7 @@ export default function Projects() {
         </section>
 
         <section id="projects" className="py-12">
-          <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Our Projects</h2>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Button variant={filter === null ? "default" : "outline"} onClick={() => setFilter(null)}>
               All

@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
+import { FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -53,12 +55,12 @@ export function SiteHeader() {
                   <div className="grid gap-1">
                     <NavigationMenuLink asChild>
                       <Link
-                        href="#"
+                        href="/about"
                         className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                       >
-                        <div className="text-sm font-medium leading-none">Bot Builder</div>
+                        <div className="text-sm font-medium leading-none">How It All Started</div>
                         <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          Create powerful Discord bots without code
+                        At MindSpark, we blend creativity with technology to craft stunning digital experiences that elevate brands and drive success. 🚀
                         </p>
                       </Link>
                     </NavigationMenuLink>
@@ -94,10 +96,14 @@ export function SiteHeader() {
           </NavigationMenuList>
         </NavigationMenu>
         {!isAuthPage && (
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-1 lg:space-x-5 ">
             <Button variant="ghost" size="sm" asChild>
-              <Link href="/signin">Log in</Link>
+              <Link href="https://www.facebook.com/MindSparkdmv/"><FaFacebook /></Link>
             </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <Link href="https://github.com/Syren0914"><FaGithub /></Link>
+            </Button>
+
             <Button size="sm" asChild>
               <Link target="_blank" href="mailto:erdenebatbayar3@gmail.com">Contact Us</Link>
             </Button>

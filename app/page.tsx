@@ -76,10 +76,12 @@ export default function Home() {
               transition={{ delay: 0.6 }}
               className="flex gap-4 flex-col lg:flex-row"
             >
-              <Button size="lg" className="h-12 px-8 z-20">
-                <Link href={"/projects"}>Our Projects</Link>
+              <Link href={"/projects"} className="z-20">
+              <Button size="lg" className="h-12 px-8 ">
+                Our Projects
                 
               </Button>
+              </Link>
               <Button size="lg" variant="outline" className="h-12 px-8 z-20">
               <Link href={"/about"}>Learn More</Link>
               </Button>
@@ -153,8 +155,8 @@ export default function Home() {
       Simple, transparent pricing
     </h2>
     <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-      Choose the plan that's right for you and start building amazing
-      Discord bots today.
+      Choose the plan that's right for you we build
+      from startups to enterprises, we design scalable solutions that automate, engage, and elevate your brand. Let’s turn your vision into reality.
     </p>
   </motion.div>
 
@@ -171,7 +173,7 @@ export default function Home() {
         <div className="p-6">
           <h3 className="text-2xl font-bold">{plan.name}</h3>
           <div className="mt-4 flex items-baseline text-3xl font-bold">
-            ${plan.price}
+            {plan.price}
             <span className="ml-1 text-xl font-normal text-muted-foreground">
               /month
             </span>
@@ -209,10 +211,11 @@ export default function Home() {
       Ready to get started?
     </h2>
     <p className="max-w-xl text-muted-foreground sm:text-lg sm:leading-7">
-      Create your first Discord bot in minutes. No credit card required.
+      Find a simple solution for your business in minutes.
     </p>
     <Button size="lg" className="mt-4 w-full sm:w-auto">
-      Start Building Now
+      <Link href={"mailto:erdenebatbayar3@gmail.com"}>Start Connecting Now</Link>
+      
     </Button>
   </motion.div>
 </section>
@@ -228,7 +231,7 @@ const features = [
   {
     name: "Easy Setup",
     description:
-      "Get your bot up and running in minutes with our intuitive interface.",
+      "Get your business running in minutes with our quick support.",
     icon: Zap,
   },
   {
@@ -244,12 +247,12 @@ const features = [
   {
     name: "AI-Powered",
     description:
-      "Leverage artificial intelligence to create smarter responses.",
+      "Leverage artificial intelligence to create smarter solutions.",
     icon: Bot,
   },
   {
     name: "Enterprise Security",
-    description: "Bank-grade security to protect your bot and users.",
+    description: "Bank-grade security to protect your server and users.",
     icon: Shield,
   },
   {
@@ -262,42 +265,41 @@ const features = [
 const pricingPlans = [
   {
     name: "Free",
-    price: 0,
-    description: "Perfect for small communities and hobbyists.",
+    price: "$0",
+    description: "Perfect for individuals exploring our services.",
     features: [
-      "1 bot",
-      "Up to 100 users",
-      "Basic command set",
-      "Community support",
+      " Access to essential resources",
+      "Monthly newsletter",
+      "Community forums",
+      "Standard support",
     ],
-    buttonText: "Start for Free",
+    buttonText: "Join for Free",
   },
   {
-    name: "Pro",
-    price: 8,
-    description: "Ideal for growing communities and businesses.",
+    name: "Elite Membership",
+    price: "Custom Pricing",
+    description: "Best for professionals & businesses seeking full access.",
     features: [
-      "Unlimited bots",
-      "Unlimited users",
-      "Advanced commands",
-      "Priority support",
-      "Custom branding",
-      "Analytics dashboard",
+      "All Premium perks",
+      "Personalized consultations",
+      "Custom solutions & integrations",
+      "VIP networking opportunities",
+      "Dedicated account manager",
     ],
-    buttonText: "Upgrade to Pro",
+    buttonText: "Upgrade to Elite",
   },
   {
-    name: "Pro",
-    price: 8,
-    description: "Ideal for growing communities and businesses.",
+    name: "Premium Membership",
+    price: "$35",
+    description: "Great for dedicated members who want more benefits.",
     features: [
-      "Unlimited bots",
-      "Unlimited users",
-      "Advanced commands",
+      "All Basic Membership perks",
+      "Exclusive content & resources",
       "Priority support",
-      "Custom branding",
-      "Analytics dashboard",
+      "Early access to new features",
+      "Member-only events",
+
     ],
-    buttonText: "Upgrade to Pro",
+    buttonText: "Upgrade to Premium",
   },
 ] as const;
