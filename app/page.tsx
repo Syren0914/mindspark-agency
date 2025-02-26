@@ -20,6 +20,7 @@ import { Footer } from "./components/Footer";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import Link from "next/link";
 import HeroScrollDemo from "./HeroScrollDemo/page";
+import InfiniteMovingCardsDemo from "./components/infinite-moving-cards";
 
 
 
@@ -40,6 +41,7 @@ export default function Home() {
 
           
         </section>
+        <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
 
         <Separator className="my-12" />
 

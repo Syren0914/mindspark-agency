@@ -30,21 +30,21 @@ const teamMembers = [
     github: "https://github.com/janedoe",
     linkedin: "https://linkedin.com/in/janedoe",
     email: "jane@youragency.com",
-  },
+  }, 
   {
     name: "Eddie",
     role: "Lead Developer",
     image: "/erdene.jpg",
     bio: "Eddie is an expert in React and Node.js with a passion for building scalable applications.",
     skills: ["React", "Node.js", "GraphQL", "AWS"],
-    github: "https://github.com/johnsmith",
+    github: "https://github.com/syren0914",
     linkedin: "https://linkedin.com/in/johnsmith",
-    email: "john@youragency.com",
+    email: "erdenebatbayar3@gmail.com",
   },
   {
     name: "Emily Brown",
     role: "UX/UI Designer",
-    image: "/placeholder.svg",
+    image: "/emily.jpg",
     bio: "Emily creates intuitive and beautiful user interfaces that drive engagement.",
     skills: ["UI Design", "User Research", "Prototyping", "Figma"],
     github: "https://github.com/emilybrown",
@@ -66,15 +66,15 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="container px-4 md:px-6">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">About Our Agency</h1>
+          <div className="flex flex-col container px-4 md:px-6 items-center justify-center">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8  ">About Our Agency</h1>
             <p className="text-xl text-muted-foreground mb-8">
               We are a dynamic digital agency committed to delivering innovative solutions that drive business growth.
               Our team of experts combines creativity with technical expertise to build cutting-edge web and mobile
               applications, design captivating user experiences, and implement effective digital strategies.
             </p>
             <h2 className="text-2xl font-bold mb-4">Our Expertise</h2>
-            <div className="flex flex-wrap gap-4 mb-12">
+            <div className="flex flex-wrap gap-4 mb-12 justify-center">
               {agencySkills.map((skill, index) => (
                 <motion.div
                   key={index}

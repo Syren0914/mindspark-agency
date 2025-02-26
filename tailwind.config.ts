@@ -10,9 +10,7 @@ const addVariablesForColors = ({ addBase, theme }: any) => {
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
 
-  addBase({
-    ":root": newVars,
-  });
+  addBase({ ":root": newVars });
 };
 
 const config: Config = {
@@ -73,6 +71,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       animation: {
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
@@ -80,6 +79,9 @@ const config: Config = {
         fifth: "moveInCircle 20s ease infinite",
       },
       keyframes: {
+        scroll: {
+          to: { transform: "translate(calc(-50% - 0.5rem))" },
+        },
         moveHorizontal: {
           "0%": { transform: "translateX(-50%) translateY(-10%)" },
           "50%": { transform: "translateX(50%) translateY(10%)" },
