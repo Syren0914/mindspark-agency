@@ -19,74 +19,26 @@ import { Footer } from "./components/Footer";
 
 import { Spotlight } from "@/components/ui/spotlight-new";
 import Link from "next/link";
-import { DiAtom } from "react-icons/di";
+import HeroScrollDemo from "./HeroScrollDemo/page";
+
+
 
 export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col justify-center">
       <SiteHeader />
       <main className="flex-1">
+        
         <section className="flex min-h-screen flex-col items-center justify-center space-y-10 py-24 relative">
           {/* Spotlight wrapped to prevent unintended movement */}
+          
           <div className="absolute inset-0 overflow-hidden">
             <Spotlight />
           </div>
+          
+          <HeroScrollDemo></HeroScrollDemo>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="container flex flex-col items-center justify-center gap-6 text-center"
-          >
-            <motion.a
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              href="#"
-              className="inline-flex items-center rounded-full bg-muted px-4 py-1.5 text-sm font-medium"
-            >
-              🎉 <Separator className="mx-2 h-4" orientation="vertical" />{" "}
-              Introducing MindSpark
-            </motion.a>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1]"
-            >
-              Welcome to
-              <br />
-              <span className="flex gap-2"> MindSpark <DiAtom /> </span>
-              
-            </motion.h1>
-
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl"
-            >
-              Revolutionize the way you do business with AI-powered automation and intelligent workflows.
-            </motion.span>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="flex gap-4 flex-col lg:flex-row"
-            >
-              <Link href={"/projects"} className="z-20">
-              <Button size="lg" className="h-12 px-8 ">
-                Our Projects
-                
-              </Button>
-              </Link>
-              <Button size="lg" variant="outline" className="h-12 px-8 z-20">
-              <Link href={"/about"}>Learn More</Link>
-              </Button>
-            </motion.div>
-          </motion.div>
+          
         </section>
 
         <Separator className="my-12" />

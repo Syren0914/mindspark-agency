@@ -1,5 +1,7 @@
+
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+
 
 export function Footer() {
   return (
@@ -7,6 +9,7 @@ export function Footer() {
       <div className="container w-full mx-auto flex flex-col gap-10 py-16 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           <div className="flex flex-col gap-4">
+           
             <h3 className="text-lg font-semibold">Product</h3>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
               Features

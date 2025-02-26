@@ -10,6 +10,9 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { SiteHeader } from "../components/site-header"
 import { Footer } from "../components/Footer"
+import { AppleCardsCarouselDemo } from "../components/Applecard"
+
+
 
 // Sample project data - replace with your actual projects
 const projects = [
@@ -22,17 +25,9 @@ const projects = [
   //   liveUrl: "https://ecommerce-platform-demo.vercel.app",
   // },
   {
-    title: "Glow Organic Skincare",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
-    image: "/glowOrganic.png",
-    technologies: ["React", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
-    liveUrl: "https://ecommerce-platform-demo.vercel.app",
-  },
-  {
     title: "Thai Papaya",
     description: "A full-stack e-commerce solution with real-time inventory management.",
-    image: "/thaipapaya.png",
+    image: "/thaipapaya.webp",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
     liveUrl: "https://ecommerce-platform-demo.vercel.app",
@@ -45,6 +40,24 @@ const projects = [
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
     liveUrl: "https://ecommerce-platform-demo.vercel.app",
   },
+  {
+    title: "Three.js Apple Webpage",
+    description: "A sleek weather application with location-based forecasts.",
+    image: "/threejs.png",
+    technologies: ["Vue.js", "OpenWeatherMap API"],
+    githubUrl: "https://github.com/yourusername/weather-app",
+    liveUrl: "https://weather-app-demo.vercel.app",
+  },
+  {
+    title: "Glow Organic Skincare",
+    description: "A full-stack e-commerce solution with real-time inventory management.",
+    image: "/glowOrganic.png",
+    technologies: ["React", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/yourusername/ecommerce-platform",
+    liveUrl: "https://ecommerce-platform-demo.vercel.app",
+  },
+  
+  
   
   {
     title: "Thai Love ",
@@ -55,14 +68,7 @@ const projects = [
     liveUrl: "https://ecommerce-platform-demo.vercel.app",
   },
   
-  {
-    title: "Three.js Apple Webpage",
-    description: "A sleek weather application with location-based forecasts.",
-    image: "/threejs.png",
-    technologies: ["Vue.js", "OpenWeatherMap API"],
-    githubUrl: "https://github.com/yourusername/weather-app",
-    liveUrl: "https://weather-app-demo.vercel.app",
-  },
+  
   
   // Add more projects as needed
 ]
@@ -83,7 +89,7 @@ export default function Projects() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter mt-5 mb-5 sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Welcome to our Project Showcase
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
@@ -164,6 +170,8 @@ export default function Projects() {
           </div>
         </section>
       </main>
+      <h2 className="text-3xl font-bold mb-8 text-center">Our Menu Designs</h2>
+      <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
 
       <Footer/>
     </div>
