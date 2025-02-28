@@ -56,9 +56,6 @@ const projects = [
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
     liveUrl: "https://ecommerce-platform-demo.vercel.app",
   },
-  
-  
-  
   {
     title: "Thai Love ",
     description: "A full-stack e-commerce solution with real-time inventory management.",
@@ -67,6 +64,159 @@ const projects = [
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
     liveUrl: "https://ecommerce-platform-demo.vercel.app",
   },
+  {
+    title: "Coffee Holic",
+    description: "",
+    image: "/logo1.png",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Asian Noodle House",
+    description: "",
+    image: "/logo2.jpg",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "In House",
+    description: "",
+    image: "/logo3.png",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "JTM Gems",
+    description: "",
+    image: "/logo4.png",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Pannee Ice Cream",
+    description: "",
+    image: "/logo5.png",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Logo",
+    description: "",
+    image: "/logo6.jpg",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Logo",
+    description: "",
+    image: "/logo7.png",
+    technologies: ["Logo"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Mum Aroi",
+    description: "",
+    image: "/marketing1.jpg",
+    technologies: ["Marketing"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Mum Aroi",
+    description: "",
+    image: "/marketing2.jpg",
+    technologies: ["Marketing"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Sawatdee",
+    description: "",
+    image: "/marketing3.jpg",
+    technologies: ["Marketing"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Marketing Post 4",
+    description: "",
+    image: "/marketing4.jpg",
+    technologies: ["Marketing"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Marketing Post 5",
+    description: "",
+    image: "/marketing5.jpg",
+    technologies: ["Marketing"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Menu 1",
+    description: "",
+    image: "/menu1.jpg",
+    technologies: ["Menu"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Menu 2",
+    description: "",
+    image: "/menu2.jpg",
+    technologies: ["Menu"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+ 
+  {
+    title: "Menu 4",
+    description: "",
+    image: "/menu4.jpg",
+    technologies: ["Menu"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Menu 5",
+    description: "",
+    image: "/menu5.jpg",
+    technologies: ["Menu"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Menu 6",
+    description: "",
+    image: "/menu6.jpg",
+    technologies: ["Menu"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Crafted Poster",
+    description: "",
+    image: "/crafted.jpg",
+    technologies: ["Poster"],
+    githubUrl: "",
+    liveUrl: ""
+  },
+  {
+    title: "Poster",
+    description: "",
+    image: "/poster.jpg",
+    technologies: ["Poster"],
+    githubUrl: "",
+    liveUrl: ""
+  }
   
   
   
@@ -170,9 +320,7 @@ export default function Projects() {
           </div>
         </section>
       </main>
-      <h2 className="text-3xl font-bold mb-8 text-center">Our Menu Designs</h2>
-      <AppleCardsCarouselDemo></AppleCardsCarouselDemo>
-
+      
       <Footer/>
     </div>
   )
