@@ -10,7 +10,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { SiteHeader } from "../components/site-header"
 import { Footer } from "../components/Footer"
-import { AppleCardsCarouselDemo } from "../components/Applecard"
+
 
 
 
