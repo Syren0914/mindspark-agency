@@ -143,7 +143,9 @@ export default function Home() {
               </li>
             ))}
           </ul>
+          <Link target="_blank" href={"mailto:Mindsparkamplify@gmail.com"}>
           <Button className="mt-8 w-full">{plan.buttonText}</Button>
+          </Link>
         </div>
       </motion.div>
     ))}
@@ -168,7 +170,7 @@ export default function Home() {
       Find a simple solution for your business in minutes.
     </p>
     <Button size="lg" className="mt-4 w-full sm:w-auto">
-      <Link href={"mailto:erdenebatbayar3@gmail.com"}>Start Connecting Now</Link>
+      <Link target="_blank" href={"mailto:Mindsparkamplify@gmail.com"}>Start Connecting Now</Link>
       
     </Button>
   </motion.div>
@@ -227,7 +229,7 @@ const pricingPlans = [
       "Community forums",
       "Standard support",
     ],
-    buttonText: "Join for Free",
+    buttonText: "Contact Us For More Information",
   },
   {
     name: "Elite Membership",
@@ -240,7 +242,7 @@ const pricingPlans = [
       "VIP networking opportunities",
       "Dedicated account manager",
     ],
-    buttonText: "Upgrade to Elite",
+    buttonText: "Contact Us For Information",
   },
   {
     name: "Premium Membership",
@@ -254,6 +256,6 @@ const pricingPlans = [
       "Member-only events",
 
     ],
-    buttonText: "Upgrade to Premium",
+    buttonText: "Contact Us For Information",
   },
 ] as const;
