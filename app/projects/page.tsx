@@ -1,18 +1,21 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Github, ExternalLink} from "lucide-react"
-import Image from "next/image"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Github, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
-import { motion } from "framer-motion"
-import { SiteHeader } from "../components/site-header"
-import { Footer } from "../components/Footer"
-
-
-
+import { motion } from "framer-motion";
+import { SiteHeader } from "../components/site-header";
+import { Footer } from "../components/Footer";
 
 // Sample project data - replace with your actual projects
 const projects = [
@@ -26,7 +29,8 @@ const projects = [
   // },
   {
     title: "Thai Papaya",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
+    description:
+      "A full-stack e-commerce solution with real-time inventory management.",
     image: "/thaipapaya.webp",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
@@ -34,7 +38,8 @@ const projects = [
   },
   {
     title: "Lumthai",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
+    description:
+      "A full-stack e-commerce solution with real-time inventory management.",
     image: "/lumthai.png",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
@@ -44,13 +49,14 @@ const projects = [
     title: "Three.js Apple Webpage",
     description: "A sleek weather application with location-based forecasts.",
     image: "/threejs.png",
-    technologies: ["Vue.js", "OpenWeatherMap API"],
+    technologies: ["Vue.js"],
     githubUrl: "https://github.com/yourusername/weather-app",
     liveUrl: "https://weather-app-demo.vercel.app",
   },
   {
     title: "Glow Organic Skincare",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
+    description:
+      "A full-stack e-commerce solution with real-time inventory management.",
     image: "/glowOrganic.png",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
@@ -58,7 +64,8 @@ const projects = [
   },
   {
     title: "Thai Love ",
-    description: "A full-stack e-commerce solution with real-time inventory management.",
+    description:
+      "A full-stack e-commerce solution with real-time inventory management.",
     image: "/thailove.webp",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/yourusername/ecommerce-platform",
@@ -70,7 +77,7 @@ const projects = [
     image: "/logo1.png",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "Asian Noodle House",
@@ -78,7 +85,7 @@ const projects = [
     image: "/logo2.jpg",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "In House",
@@ -86,7 +93,7 @@ const projects = [
     image: "/logo3.png",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "JTM Gems",
@@ -94,7 +101,7 @@ const projects = [
     image: "/logo4.png",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "Pannee Ice Cream",
@@ -102,7 +109,7 @@ const projects = [
     image: "/logo5.png",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "Logo",
@@ -110,7 +117,7 @@ const projects = [
     image: "/logo6.jpg",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "Logo",
@@ -118,15 +125,15 @@ const projects = [
     image: "/logo7.png",
     technologies: ["Logo"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
-    title: "Mum Aroi",
+    title: "Crystal Thai",
     description: "",
     image: "/marketing1.jpg",
     technologies: ["Marketing"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "Mum Aroi",
@@ -134,7 +141,7 @@ const projects = [
     image: "/marketing2.jpg",
     technologies: ["Marketing"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
     title: "Sawatdee",
@@ -142,97 +149,84 @@ const projects = [
     image: "/marketing3.jpg",
     technologies: ["Marketing"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
-    title: "Marketing Post 4",
+    title: "Thai Value",
     description: "",
     image: "/marketing4.jpg",
     technologies: ["Marketing"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
-    title: "Marketing Post 5",
+    title: "The Lobster",
     description: "",
     image: "/marketing5.jpg",
     technologies: ["Marketing"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
-  {
-    title: "Menu 1",
-    description: "",
-    image: "/menu1.jpg",
-    technologies: ["Menu"],
-    githubUrl: "",
-    liveUrl: ""
-  },
-  {
-    title: "Menu 2",
-    description: "",
-    image: "/menu2.jpg",
-    technologies: ["Menu"],
-    githubUrl: "",
-    liveUrl: ""
-  },
- 
-  {
-    title: "Menu 4",
-    description: "",
-    image: "/menu4.jpg",
-    technologies: ["Menu"],
-    githubUrl: "",
-    liveUrl: ""
-  },
-  {
-    title: "Menu 5",
-    description: "",
-    image: "/menu5.jpg",
-    technologies: ["Menu"],
-    githubUrl: "",
-    liveUrl: ""
-  },
-  {
-    title: "Menu 6",
-    description: "",
-    image: "/menu6.jpg",
-    technologies: ["Menu"],
-    githubUrl: "",
-    liveUrl: ""
-  },
+
+
   {
     title: "Crafted Poster",
     description: "",
     image: "/crafted.jpg",
     technologies: ["Poster"],
     githubUrl: "",
-    liveUrl: ""
+    liveUrl: "",
   },
   {
-    title: "Poster",
+    title: "Gift Card",
     description: "",
-    image: "/poster.jpg",
-    technologies: ["Poster"],
+    image: "/giftcard1.jpg",
+    technologies: ["Custom Card"],
     githubUrl: "",
-    liveUrl: ""
-  }
-  
-  
-  
-  // Add more projects as needed
-]
+    liveUrl: "",
+  },
+  {
+    title: "Gift Card",
+    description: "",
+    image: "/giftcard2.jpg",
+    technologies: ["Custom Card"],
+    githubUrl: "",
+    liveUrl: "",
+  },
+  {
+    title: "Emerald Menu",
+    description: "",
+    image: "/giftcard3.jpg",
+    technologies: ["Menu"],
+    githubUrl: "",
+    liveUrl: "",
+  },
+  {
+    title: "Gift Card",
+    description: "",
+    image: "/giftcard4.jpg",
+    technologies: ["Custom Card"],
+    githubUrl: "",
+    liveUrl: "",
+  },
 
-const allTechnologies = Array.from(new Set(projects.flatMap((project) => project.technologies)))
+  // Add more projects as needed
+];
+
+const allTechnologies = Array.from(
+  new Set(projects.flatMap((project) => project.technologies))
+);
 
 export default function Projects() {
-  const [filter, setFilter] = useState<string | null>(null)
+  const [filter, setFilter] = useState<string | null>(null);
 
-  const filteredProjects = filter ? projects.filter((project) => project.technologies.includes(filter)) : projects
+  const filteredProjects = filter
+    ? projects.filter((project) => project.technologies.includes(filter))
+    : projects;
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
-      <SiteHeader/>
+      <SiteHeader />
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <section className="py-12 md:py-24 lg:py-32 xl:py-48">
@@ -243,8 +237,9 @@ export default function Projects() {
                   Welcome to our Project Showcase
                 </h1>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Explore our portfolio of web development projects. From responsive designs to full-stack applications,
-                  discover my passion for creating innovative digital solutions.
+                  Explore our portfolio of web development projects. From
+                  responsive designs to full-stack applications, discover my
+                  passion for creating innovative digital solutions.
                 </p>
               </div>
               <div className="space-x-4">
@@ -262,11 +257,18 @@ export default function Projects() {
         <section id="projects" className="py-12">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Projects</h2>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Button variant={filter === null ? "default" : "outline"} onClick={() => setFilter(null)}>
+            <Button
+              variant={filter === null ? "default" : "outline"}
+              onClick={() => setFilter(null)}
+            >
               All
             </Button>
             {allTechnologies.map((tech) => (
-              <Button key={tech} variant={filter === tech ? "default" : "outline"} onClick={() => setFilter(tech)}>
+              <Button
+                key={tech}
+                variant={filter === tech ? "default" : "outline"}
+                onClick={() => setFilter(tech)}
+              >
                 {tech}
               </Button>
             ))}
@@ -290,8 +292,12 @@ export default function Projects() {
                     />
                   </CardHeader>
                   <CardContent className="p-4">
-                    <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
-                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <CardTitle className="text-xl mb-2">
+                      {project.title}
+                    </CardTitle>
+                    <p className="text-muted-foreground mb-4">
+                      {project.description}
+                    </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge key={techIndex} variant="secondary">
@@ -302,13 +308,21 @@ export default function Projects() {
                   </CardContent>
                   <CardFooter className="flex justify-between p-4">
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Github className="mr-2 h-4 w-4" />
                         GitHub
                       </a>
                     </Button>
                     <Button variant="default" size="sm" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         View Project
                       </a>
@@ -320,9 +334,8 @@ export default function Projects() {
           </div>
         </section>
       </main>
-      
-      <Footer/>
-    </div>
-  )
-}
 
+      <Footer />
+    </div>
+  );
+}

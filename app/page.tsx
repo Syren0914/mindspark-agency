@@ -92,9 +92,9 @@ export default function Home() {
 
         </section>
 
-        <Separator className="my-12" />
+        {/* <Separator className="my-12" /> */}
 
-        <section
+        {/* <section
   id="pricing"
   className="w-full mx-auto container py-12 md:py-24 lg:py-32 px-4"
 >
@@ -150,7 +150,7 @@ export default function Home() {
       </motion.div>
     ))}
   </div>
-</section>
+</section> */}
 
 
         <Separator className="my-12" />
