@@ -13,7 +13,7 @@ import {
   Bot,
   Shield,
   Sparkles,
-  Check,
+  
 } from "lucide-react";
 import { Footer } from "./components/Footer";
 
@@ -218,44 +218,44 @@ const features = [
   },
 ] as const;
 
-const pricingPlans = [
-  {
-    name: "Free",
-    price: "$0",
-    description: "Perfect for individuals exploring our services.",
-    features: [
-      " Access to essential resources",
-      "Monthly newsletter",
-      "Community forums",
-      "Standard support",
-    ],
-    buttonText: "Contact Us For More Information",
-  },
-  {
-    name: "Elite Membership",
-    price: "Custom Pricing",
-    description: "Best for professionals & businesses seeking full access.",
-    features: [
-      "All Premium perks",
-      "Personalized consultations",
-      "Custom solutions & integrations",
-      "VIP networking opportunities",
-      "Dedicated account manager",
-    ],
-    buttonText: "Contact Us For Information",
-  },
-  {
-    name: "Premium Membership",
-    price: "$35",
-    description: "Great for dedicated members who want more benefits.",
-    features: [
-      "All Basic Membership perks",
-      "Exclusive content & resources",
-      "Priority support",
-      "Early access to new features",
-      "Member-only events",
+// const pricingPlans = [
+//   {
+//     name: "Free",
+//     price: "$0",
+//     description: "Perfect for individuals exploring our services.",
+//     features: [
+//       " Access to essential resources",
+//       "Monthly newsletter",
+//       "Community forums",
+//       "Standard support",
+//     ],
+//     buttonText: "Contact Us For More Information",
+//   },
+//   {
+//     name: "Elite Membership",
+//     price: "Custom Pricing",
+//     description: "Best for professionals & businesses seeking full access.",
+//     features: [
+//       "All Premium perks",
+//       "Personalized consultations",
+//       "Custom solutions & integrations",
+//       "VIP networking opportunities",
+//       "Dedicated account manager",
+//     ],
+//     buttonText: "Contact Us For Information",
+//   },
+//   {
+//     name: "Premium Membership",
+//     price: "$35",
+//     description: "Great for dedicated members who want more benefits.",
+//     features: [
+//       "All Basic Membership perks",
+//       "Exclusive content & resources",
+//       "Priority support",
+//       "Early access to new features",
+//       "Member-only events",
 
-    ],
-    buttonText: "Contact Us For Information",
-  },
-] as const;
+//     ],
+//     buttonText: "Contact Us For Information",
+//   },
+// ] as const;
